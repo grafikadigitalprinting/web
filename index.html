@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GRAFIKA DIGITAL PRINTING</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grafika Digital Printing</title>
+  <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="Grafika Logo" class="logo">
-    <h1>GRAFIKA DIGITAL PRINTING</h1>
-    <p>Solusi cetak digital dengan hasil maksimal</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#layanan">Layanan</a></li>
-      <li><a href="#portofolio">Portofolio</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="layanan">
-      <h2>Layanan Kami</h2>
-      <div class="cards">
-        <div class="card">📄 Cetak Brosur</div>
-        <div class="card">📆 Kalender & Undangan</div>
-        <div class="card">🖼️ Spanduk & Banner</div>
-        <div class="card">📑 Print & Jilid Dokumen</div>
+  <div class="container">
+    <header>
+      <img src="assets/logo.png" class="logo" alt="Logo" />
+      <div class="judul">
+        <h1>GRAFIKA DIGITAL PRINTING</h1>
+        <p class="sub">Melayani berbagai kebutuhan percetakan dan desain digital</p>
       </div>
-    </section>
+    </header>
 
-    <section id="portofolio">
-      <h2>Portofolio</h2>
-      <p>Berikut beberapa hasil cetakan kami:</p>
-      <div class="gallery">
-        <img src="assets/sample1.jpg" alt="Sample 1">
-        <img src="assets/sample2.jpg" alt="Sample 2">
-        <img src="assets/sample3.jpg" alt="Sample 3">
-      </div>
-    </section>
+    <main>
+      <section class="layanan">
+        <h2>Layanan Kami</h2>
+        <div class="cards">
+          <a href="https://wa.me/6282138162302?text=Mau%20fotocopy%20mas" class="card biru">📄 Fotocopy</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20print%20mas" class="card hijau">🖨️ Print</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20cetak%20foto%20mas" class="card oranye">📷 Cetak Foto</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20undangan%20mas" class="card ungu">✉️ Undangan</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20nota%20mas" class="card kuning">🧾 Nota</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20banner%20mas" class="card merah">🖼️ Banner</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20laminating%20mas" class="card tosca">📌 Laminating & Press</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20scan%20mas" class="card abu">📠 Scan Dokumen</a>
+          <a href="https://wa.me/6282138162302?text=Mau%20stiker%20mas" class="card pink">🏷️ Stiker, dll.</a>
+        </div>
+      </section>
 
-    <section id="kontak">
-      <h2>Hubungi Kami</h2>
-      <p>Ingin pesan langsung? Klik tombol WhatsApp di bawah ini:</p>
-      <a href="https://wa.me/6282138162302" target="_blank" class="wa-button">Kirim via WhatsApp</a>
-    </section>
-  </main>
+      <section class="kontak">
+<div class="printer">
+          <img src="assets/printer.png" alt="Printer" />
+        </div>
+        <div class="info">
+          <h3>📍 Pringapus, Kalikajar</h3>
+          <p>📞 +62 821-3816-2302</p>
+          <p>🌐 <a href="https://grafikadigitalprinting.github.io/web" target="_blank">grafikadigitalprinting.github.io/web</a></p>
+          <p><a href="assets/brosur.pdf" download>📥 Download Brosur PDF</a></p>
+        </div>
+        
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 GRAFIKA DIGITAL PRINTING | All rights reserved</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 GRAFIKA DIGITAL PRINTING</p>
+      <button id="toggle-dark">🌙 Mode Malam</button>
+    </footer>
+    <script>
+      document.getElementById("toggle-dark").addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </div>
 </body>
 </html>
