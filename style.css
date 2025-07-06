@@ -1,99 +1,120 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eeeeee;
   color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
-  text-align: center;
-  background: linear-gradient(to right, #009fe3, #ec008c);
-  color: white;
-  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 15px;
+  width: 80px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  background: #333;
+.judul h1 {
   margin: 0;
-  padding: 10px 0;
-  list-style: none;
+  font-size: 24px;
 }
 
-nav ul li a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+.sub {
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 40px 20px;
+.layanan h2 {
+  text-align: center;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  flex: 1 1 200px;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  background: #e3f2fd;
-}
-
-.gallery {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
   margin-top: 20px;
 }
 
-.gallery img {
-  width: 200px;
-  border-radius: 6px;
-}
-
-.wa-button {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #25d366;
-  color: white;
+.card {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s ease;
-  margin-top: 10px;
+  color: white;
 }
 
-.wa-button:hover {
-  background-color: #128c7e;
+.biru { background-color: #2196f3; }
+.hijau { background-color: #4caf50; }
+.oranye { background-color: #ff9800; }
+.ungu { background-color: #9c27b0; }
+.kuning { background-color: #ffc107; color: #000; }
+.merah { background-color: #f44336; }
+.tosca { background-color: #009688; }
+.abu { background-color: #607d8b; }
+.pink { background-color: #e91e63; }
+
+.kontak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
+
+.info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.printer img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
 
 footer {
   text-align: center;
-  padding: 15px;
+  margin-top: 30px;
+}
+
+footer button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
   background: #333;
   color: white;
-  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark footer button {
+  background: #eee;
+  color: #333;
+}
+
+.kontak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.printer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
