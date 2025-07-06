@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to right, #009fe3, #ec008c);
+  color: white;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #e3f2fd;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background: #009fe3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+}
